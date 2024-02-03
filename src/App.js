@@ -24,7 +24,7 @@ function App() {
   return (
     <div>
       <h1>{apodData.title}</h1>
-      <img src={apodData.url} alt={apodData.title} />
+      <img src={apodData.url} alt={apodData.title} class="centerImage"/>
       <p>{apodData.explanation}</p>
       <p>{apodData.date}</p>
       <input type="date" onChange={e => setDate(e.target.value)} value={date}>
